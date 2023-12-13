@@ -39,14 +39,14 @@ int main() {
 
     cout << "Вектор состоит из " << numbers.size() << " элементов" << endl;
     //пункт 2
-    numbers.erase(numbers.begin() + 2); // Удаляет третий элемент
+    numbers.erase(numbers.begin() + 2); // Удаляет третий элемент (константа в виде аргумента)
     std::cout << "После использования erase:" << std::endl;
     for (const auto& number : numbers) {
         std::cout << number << " ";
     }
     std::cout << "" << std::endl;
     //пункт 3
-    numbers.insert(numbers.begin(), 4); // Вставляет число 4 в начало вектора
+    numbers.insert(numbers.begin(), 4); // Вставляет число 4 в начало вектора (константа в виде аргумента)
     std::cout << "После использования insert:" << std::endl;
     for (const auto& number : numbers)
         std::cout << number << ' ';
