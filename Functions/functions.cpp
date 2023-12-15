@@ -1,4 +1,4 @@
-﻿#include "functions.h"
+#include "functions.h"
 #include <iostream>
 #include <cmath>
 #define N_Max 100
@@ -35,23 +35,10 @@ namespace la
 		return false;
 	}
 
-	bool isConsistEightInMatrix(int matrix[N_Max][N_Max], int n, int m)
+	bool isConsistEightInStr(int matrix[N_Max], int m)
 	{
-		/*
-		for (int i = 0; i < n; i++)
-		{
-			bool flag = false; 
-			for (int j = 0; j < m; j++)
-				if (isConsistEight(matrix[i][j]))
-					flag = true;
-			if (!flag)
-				return false;
-		}
-		return true;*/
-		for (int i = 0; i < n; i++) {
-			for (int j = 0; j < m; j++) {
-				if (isConsistEight(matrix[i][j])) return true;
-			}
+		for (int i = 0; i < m; i++) {
+			if (isConsistEight(matrix[i])) return true;
 		}
 	}
 
@@ -97,13 +84,12 @@ namespace la
 	void sortStr(int matrix[N_Max][N_Max], int n, int m)
 	{
 		for (int i = 0; i < n; i++) {
-			for (int j = 0; j < m; i++) {
-				if (isConsistEight(matrix[i][j])) {
-					
-					Sorting(matrix[i], m);
-					break;
-				}
+			
+			if (isConsistEightInStr(matrix[i], m)) {	
+				Sorting(matrix[i], m);
+				
 			}
+			
 		}
 	}
 }
