@@ -44,7 +44,7 @@ namespace la
 
 	int findBiggestElems(int matrix[N_Max][N_Max], int n, int m)
 	{
-		int maxi = -1000000;
+		int maxi = INT_MIN;
 		for (int i = 0; i < n; i++) {
 			for (int j = 0; j < m; j++) {
 				if (matrix[i][j] > maxi) {
@@ -57,7 +57,7 @@ namespace la
 
 	int findSmallestElems(int matrix[N_Max][N_Max], int n, int m)
 	{
-		int mini = 1000000;
+		int mini = INT_MAX;
 		for (int i = 0; i < n; i++) {
 			for (int j = 0; j < m; j++) {
 				if (matrix[i][j] < mini) {
