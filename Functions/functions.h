@@ -9,8 +9,6 @@ namespace la
 
 	bool isConsistEight(int x);
 
-	bool isConsistEightInMatrix(int matrix[N_Max][N_Max], int n, int m);
-
 	int findBiggestElems(int matrix[N_Max][N_Max], int n, int m);
 
 	int findSmallestElems(int matrix[N_Max][N_Max], int n, int m);
@@ -18,5 +16,7 @@ namespace la
 	void sortStr(int matrix[N_Max][N_Max], int n, int m);
 
 	void Sorting(int mass[N_Max], int m);
+
+	bool isConsistEightInStr(int matrix[N_Max], int m);
 
 }
