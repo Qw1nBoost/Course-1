@@ -10,11 +10,7 @@ int main()
 	const int mMax = 100;
 	int N, M, a[nMax][mMax];
 	// Ввод матрицы
-	std::cout << "Number of strings = ";
-	std::cin >> N;
-	std::cout << "Number of columns = "; 
-	std::cin >> M;
-	std::cout << "Input matrix: \n";
+	std::cin >> N >> M;
 	for (int i = 0; i < N; i++)
 		for (int j = 0; j < M; j++)
 			std::cin >> a[i][j];
