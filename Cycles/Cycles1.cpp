@@ -8,7 +8,7 @@ int main()
     int n;
     int mult = 1;
     int index = 1;
-    int j = -1000000;
+    int j = INT_MIN;
     int new_index = 0;
 
     std::cout << "Enter sequence length: ";
