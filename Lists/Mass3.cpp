@@ -23,7 +23,7 @@ int main()
 		std::cout << '\n';
 	}
 	// Алгоритм проверки 
-	int cMax = 100000;
+	int cMax = INT_MAX;
 	int count = 0;
 	int index;
 	for (int i = 0; i < N; i++) {
